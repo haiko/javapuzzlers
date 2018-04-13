@@ -20,10 +20,16 @@ public class NumberOfWordsFinderTest {
         String rawTxt = IOUtils.toString(new ClassPathResource(fileName).getInputStream(), "UTF-8");
         String txt = rawTxt.replace(".", "").replace(",", "").replace("'", "");
 
-        NumberOfWordsFinder numberOfWordsFinder = new DefaultNumberOfWordsFinder();
+        NumberOfWordsFinder numberOfWordsFinder = new MyNumberOfWordsFinder();
 
         List<WordNumber> uniqueWords = numberOfWordsFinder.findNumberOfUniqueWords(txt);
 
         assertEquals("number of unique words", 295, uniqueWords.size());
+
+        for (WordNumber wordNumber: uniqueWords) {
+            if(wordNumber.getWord().equals("die")){
+                assertEquals(7, wordNumber.getNumber());
+            }
+        }
     }
 }
