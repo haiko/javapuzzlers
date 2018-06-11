@@ -24,7 +24,7 @@ public class NumberOfWordsFinderTest {
 
         List<WordNumber> uniqueWords = numberOfWordsFinder.findNumberOfUniqueWords(txt);
 
-        assertEquals("number of unique words", 295, uniqueWords.size());
+        assertEquals("number of unique words", 294, uniqueWords.size());
 
         for (WordNumber wordNumber: uniqueWords) {
             if(wordNumber.getWord().equals("die")){
