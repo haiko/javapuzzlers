@@ -11,6 +11,9 @@ import static org.hamcrest.Matchers.*;
 public class DuplicateFinderTest {
 
 
+    /**
+     * Find all numbers that have duplicates in the array.
+     */
     @Test
     public void shouldFindDuplicates() {
         int[] arrayWithDuplicates = {1, 1, 3, 5, 5, 8, 8, 12, 1, 3, 14, 30, 4, 32, 4, 12, 1, 7, 8, 0, 2, 6, 7, 20, 20, 21, 21, 23, 4, 6, 7, 8};
