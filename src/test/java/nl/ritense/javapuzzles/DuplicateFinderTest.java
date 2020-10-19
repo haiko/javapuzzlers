@@ -12,7 +12,7 @@ public class DuplicateFinderTest {
 
 
     /**
-     * Find all numbers that have duplicates in the array.
+     * Find all duplicates in the array in order of appearance
      */
     @Test
     public void shouldFindDuplicates() {
